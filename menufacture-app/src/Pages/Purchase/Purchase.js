@@ -26,12 +26,6 @@ const Purchase = () => {
             <h3 className="text-2xl font-semibold uppercase">
               price: ${tool.price}
             </h3>
-            <p className="text-xl py-2">
-              Minimum Order:{" "}
-              <span className="text-orange-500 font-bold">
-                {tool.minimumOrder}
-              </span>
-            </p>
             <p className="text-xl pb-4">
               Available:{" "}
               <span className="text-blue-500 font-bold">{tool.available}</span>

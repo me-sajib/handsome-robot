@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 const UserTable = ({ users, refetch, currentUser, index }) => {
   const createAdmin = () => {
     fetch(
-      `https://boiling-hollows-81420.herokuapp.com/user/admin/${users.email}`,
+      `http://localhost:5000/user/admin/${users.email}`,
       {
         method: "PUT",
         headers: {
@@ -42,7 +42,7 @@ const UserTable = ({ users, refetch, currentUser, index }) => {
       // is confirm button clicked
       if (result.isConfirmed) {
         const email = users.email;
-        fetch(`https://boiling-hollows-81420.herokuapp.com/user/${email}`, {
+        fetch(`http://localhost:5000/user/${email}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

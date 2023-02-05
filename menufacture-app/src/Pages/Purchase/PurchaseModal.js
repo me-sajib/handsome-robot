@@ -38,7 +38,7 @@ const PurchaseModal = ({ tool }) => {
       status,
     };
     // post order to database
-    fetch("https://boiling-hollows-81420.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

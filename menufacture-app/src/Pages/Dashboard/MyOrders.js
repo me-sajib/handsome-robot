@@ -11,7 +11,7 @@ const MyOrders = () => {
   const [user, uLoading] = useAuthState(auth);
   useEffect(() => {
     if (user) {
-      fetch(`https://boiling-hollows-81420.herokuapp.com/order/${user.email}`, {
+      fetch(`http://localhost:5000/order/${user.email}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const MyOrders = () => {
       // is confirm button clicked
       if (result.isConfirmed) {
         // cancel order api call
-        fetch(`https://boiling-hollows-81420.herokuapp.com/order/${id}`, {
+        fetch(`http://localhost:5000/order/${id}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

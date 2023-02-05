@@ -9,7 +9,7 @@ const ManageProduct = () => {
     isLoading,
     refetch,
   } = useQuery("AllProducts", () =>
-    fetch("https://boiling-hollows-81420.herokuapp.com/tools").then((res) =>
+    fetch("http://localhost:5000/tools").then((res) =>
       res.json()
     )
   );

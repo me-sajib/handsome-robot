@@ -5,7 +5,7 @@ import ToolsProduct from "./ToolsProduct";
 
 const Tools = () => {
   const { data: tools, isLoading } = useQuery("tools", () =>
-    fetch("https://boiling-hollows-81420.herokuapp.com/tools").then((res) =>
+    fetch("http://localhost:5000/tools").then((res) =>
       res.json()
     )
   );

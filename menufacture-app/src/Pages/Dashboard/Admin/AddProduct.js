@@ -20,7 +20,7 @@ const AddProduct = () => {
     };
 
     // add product api call
-    fetch("https://boiling-hollows-81420.herokuapp.com/tools", {
+    fetch("http://localhost:5000/tools", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -10,7 +10,7 @@ const OrderTable = ({ order, index, refetch }) => {
     // update order status api call
 
     fetch(
-      `https://boiling-hollows-81420.herokuapp.com/order/status/${orderId}`,
+      `http://localhost:5000/order/status/${orderId}`,
       {
         method: "PUT",
         headers: {
@@ -46,7 +46,7 @@ const OrderTable = ({ order, index, refetch }) => {
     }).then((result) => {
       // is confirm button clicked
       if (result.isConfirmed) {
-        fetch(`https://boiling-hollows-81420.herokuapp.com/order/${id}`, {
+        fetch(`http://localhost:5000/order/${id}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const MyProfile = () => {
     refetch,
   } = useQuery("information", () =>
     fetch(
-      `https://boiling-hollows-81420.herokuapp.com/userInformation/${user.email}`
+      `http://localhost:5000/userInformation/${user.email}`
     ).then((res) => res.json())
   );
 

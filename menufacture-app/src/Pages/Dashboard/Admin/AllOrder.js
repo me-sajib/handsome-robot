@@ -9,7 +9,7 @@ const AllOrder = () => {
     isLoading,
     refetch,
   } = useQuery("AllOrders", () =>
-    fetch("https://boiling-hollows-81420.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

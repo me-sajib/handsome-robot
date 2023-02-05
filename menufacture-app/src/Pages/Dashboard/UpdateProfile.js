@@ -21,7 +21,7 @@ const UpdateProfile = ({ user, refetch }) => {
     }
     const information = { name, email, linkedin, phone, city, education };
     fetch(
-      `https://boiling-hollows-81420.herokuapp.com/userInformation/${email}`,
+      `http://localhost:5000/userInformation/${email}`,
       {
         method: "PUT",
         headers: {

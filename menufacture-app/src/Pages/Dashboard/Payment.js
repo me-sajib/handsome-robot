@@ -13,7 +13,7 @@ const Payment = () => {
     isLoading,
     refetch,
   } = useQuery(["order", id], () =>
-    fetch(`https://boiling-hollows-81420.herokuapp.com/userOrder/${id}`, {
+    fetch(`http://localhost:5000/userOrder/${id}`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("access")}`,

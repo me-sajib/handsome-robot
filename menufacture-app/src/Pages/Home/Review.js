@@ -11,7 +11,7 @@ import { useQuery } from "react-query";
 
 const Review = () => {
   const { data: review, isLoading } = useQuery("review", () =>
-    fetch("https://boiling-hollows-81420.herokuapp.com/review").then((res) =>
+    fetch("http://localhost:5000/review").then((res) =>
       res.json()
     )
   );

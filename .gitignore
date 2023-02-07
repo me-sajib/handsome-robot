@@ -13,14 +13,14 @@
 
 # misc
 .DS_Store
-.env.local
+# .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .firebase
-.firebaserc
-firebase.json
-tailwind.config.js
+# .firebaserc
+# firebase.json
+# tailwind.config.js
 
 npm-debug.log*
 yarn-debug.log*

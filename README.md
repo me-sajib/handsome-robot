@@ -1,16 +1,16 @@
-# Tools Manufacture
+# Handsome Robot
 ## Live Site Link
 
 https://menufacture-ec58d.web.app
 ### admin password and email
 - sajib@gmail.com
 - ssssss
-### There are many types of tools, if you wants you can order any tools, and order each order minimum quantity
+### There are many types of Robot, if you wants you can order any Robot, and order each order minimum quantity
 
 
 # Featured Website
-- Interactive Tools Banner 
-- Front page show just 6 Tools
+- Interactive Robot Banner 
+- Front page show just 6 Robot
 - Purchase Any Tool by minimum quantity
 - Purchase page are protected routes
 - When User login then show Dashboard navigation menu
